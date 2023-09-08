@@ -18,13 +18,13 @@
         //Legge til ny film (På slutten av arrayen)
         movieArchive.push("Gladiator")
         //Legge til en ny film (Vi bestemmer hvor)
-        movieArchive.splice(1,0 "Bambie")
+        movieArchive.splice(1,0 "Bambi")
         //Slette en film 
         movieArchive.splice(4,2)
 
         //Sjekke om en verdi finnes i arrayen: 
         const movieExitis = movieArchive.includes("Frozen")
-        conole.log("Frozen finnes? " + movieExitis)
+        console.log("Frozen finnes? " + movieExitis)
 
         //sortere arrayen alfabetisk fra A-Å
         movieArchive.sort()
@@ -33,7 +33,12 @@
         movieArchive.reverse()
 
         const numberArray = [99, 2, 45, 32, 10, 78]
-        numberArray.sort(function(a, b) {return a-b})
+
+        //Sortere array med tall fra minst til størst
+        numberArray.sort(function(a, b) {return a - b})
+
+        //Sortere array med tall fra størst til minst
+        numberArray.sort(function(a, b) {return b - a})
 
         //Teste at arrayen fungerer 
         console.log(movieArchive)
